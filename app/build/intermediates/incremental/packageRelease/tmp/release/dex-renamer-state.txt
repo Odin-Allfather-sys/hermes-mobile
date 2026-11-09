@@ -1,0 +1,4 @@
+#Mon Nov 09 16:50:28 MST 2026
+base.0=/home/enrich/hermes-mobile/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

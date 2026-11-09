@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.odin.hermesmobile.app-release-23:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.odin.hermesmobile.app-main-24:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.odin.hermesmobile.app-release-23:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.odin.hermesmobile.app-main-24:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.odin.hermesmobile.app-release-23:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.odin.hermesmobile.app-main-24:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.odin.hermesmobile.app-release-23:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.odin.hermesmobile.app-main-24:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.odin.hermesmobile.app-release-23:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.odin.hermesmobile.app-main-24:/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]
