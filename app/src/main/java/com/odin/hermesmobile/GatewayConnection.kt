@@ -50,7 +50,7 @@ class GatewayConnection(
         fun onWsClosed(reason: String)
     }
 
-    data class SessionRow(val id: String, val title: String, val preview: String, val count: Int, val startedAt: Long)
+    data class SessionRow(val id: String, var title: String, val preview: String, val count: Int, val startedAt: Long)
     data class Msg(val role: String, val text: String)
 
     private val base = baseUrl.trimEnd('/')

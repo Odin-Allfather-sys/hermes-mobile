@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.odin.hermesmobile"
-4    android:versionCode="1"
-5    android:versionName="1.0.0" >
+4    android:versionCode="2"
+5    android:versionName="2.0.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="26"
@@ -32,8 +32,8 @@
 22        android:extractNativeLibs="false"
 23        android:icon="@mipmap/ic_launcher"
 23-->/home/enrich/hermes-mobile/app/src/main/AndroidManifest.xml:6:9-43
-24        android:label="Hermes"
-24-->/home/enrich/hermes-mobile/app/src/main/AndroidManifest.xml:5:9-31
+24        android:label="Elder Moss"
+24-->/home/enrich/hermes-mobile/app/src/main/AndroidManifest.xml:5:9-35
 25        android:theme="@style/AppTheme" >
 25-->/home/enrich/hermes-mobile/app/src/main/AndroidManifest.xml:7:9-40
 26        <activity
