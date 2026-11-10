@@ -65,7 +65,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/enrich/.gradle/caches
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] /home/enrich/.gradle/caches/8.9/transforms/75ea9556da06a2ddba1460016a6e4412/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from /home/enrich/hermes-mobile/app/src/main/AndroidManifest.xml:5:9-35
+		ADDED from /home/enrich/hermes-mobile/app/src/main/AndroidManifest.xml:5:9-38
 	android:icon
 		ADDED from /home/enrich/hermes-mobile/app/src/main/AndroidManifest.xml:6:9-43
 	android:allowBackup

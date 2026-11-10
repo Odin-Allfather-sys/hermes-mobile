@@ -2,6 +2,6 @@ R_DEF: Internal format may change without notice
 local
 color accent
 color bg
-drawable moss_avatar
+drawable hermes_avatar
 mipmap ic_launcher
 style AppTheme

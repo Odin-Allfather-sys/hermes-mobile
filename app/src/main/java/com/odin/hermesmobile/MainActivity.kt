@@ -30,7 +30,7 @@ import java.util.Locale
 
 /**
  * Hermes Mobile v2 — native client for a Hermes gateway. Slide-out session
- * drawer, markdown chat bubbles, moss avatar, streaming, approvals, clarify.
+ * drawer, markdown chat bubbles, streaming, approvals, clarify.
  */
 class MainActivity : AppCompatActivity(), GatewayConnection.Listener {
 
@@ -117,9 +117,9 @@ class MainActivity : AppCompatActivity(), GatewayConnection.Listener {
             if (stroke > 0) setStroke(dpx(1), stroke)
         }
 
-    private fun mossAvatar(sizeDp: Int): ImageView = ImageView(this).apply {
+    private fun brandAvatar(sizeDp: Int): ImageView = ImageView(this).apply {
         layoutParams = LinearLayout.LayoutParams(dpx(sizeDp), dpx(sizeDp))
-        val src = android.graphics.BitmapFactory.decodeResource(resources, R.drawable.moss_avatar)
+        val src = android.graphics.BitmapFactory.decodeResource(resources, R.drawable.hermes_avatar)
         setImageDrawable(RoundedBitmapDrawableFactory.create(resources, src).apply { isCircular = true })
     }
 
@@ -136,7 +136,7 @@ class MainActivity : AppCompatActivity(), GatewayConnection.Listener {
         }
         bar.addView(iconButton("☰") { toggleDrawer() })
         titleText = TextView(this).apply {
-            text = "Elder Moss"
+            text = "Hermes"
             setTextColor(fg); textSize = 16f
             typeface = Typeface.DEFAULT_BOLD
             gravity = Gravity.CENTER
@@ -179,7 +179,7 @@ class MainActivity : AppCompatActivity(), GatewayConnection.Listener {
             setPadding(dpx(10), dpx(6), dpx(10), dpx(10))
         }
         input = EditText(this).apply {
-            hint = "Message Elder Moss"
+            hint = "Message Hermes"
             setHintTextColor(dim); setTextColor(fg)
             background = bubble(surface, 22f)
             setPadding(dpx(16), dpx(11), dpx(16), dpx(11))
@@ -224,10 +224,10 @@ class MainActivity : AppCompatActivity(), GatewayConnection.Listener {
             orientation = LinearLayout.HORIZONTAL; gravity = Gravity.CENTER_VERTICAL
             setPadding(dpx(16), dpx(18), dpx(16), dpx(14))
         }
-        head.addView(mossAvatar(40))
+        head.addView(brandAvatar(40))
         val headTxt = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
         headTxt.addView(TextView(this).apply {
-            text = "Elder Moss"; setTextColor(fg); textSize = 17f
+            text = "Hermes Mobile"; setTextColor(fg); textSize = 17f
             typeface = Typeface.DEFAULT_BOLD
             setPadding(dpx(10), 0, 0, 0)
         })
@@ -278,7 +278,7 @@ class MainActivity : AppCompatActivity(), GatewayConnection.Listener {
             visibility = View.GONE
             setPadding(0, dpx(60), 0, 0)
         }
-        emptyHint.addView(mossAvatar(64), LinearLayout.LayoutParams(dpx(64), dpx(64)).apply {
+        emptyHint.addView(brandAvatar(64), LinearLayout.LayoutParams(dpx(64), dpx(64)).apply {
             gravity = Gravity.CENTER; bottomMargin = dpx(14)
         })
         emptyHint.addView(TextView(this).apply {
@@ -357,7 +357,7 @@ class MainActivity : AppCompatActivity(), GatewayConnection.Listener {
             orientation = LinearLayout.HORIZONTAL
             gravity = if (mine) Gravity.END else Gravity.START
             if (!mine) {
-                addView(mossAvatar(28), LinearLayout.LayoutParams(dpx(28), dpx(28)).apply {
+                addView(brandAvatar(28), LinearLayout.LayoutParams(dpx(28), dpx(28)).apply {
                     marginEnd = dpx(8); topMargin = dpx(2)
                 })
             }
